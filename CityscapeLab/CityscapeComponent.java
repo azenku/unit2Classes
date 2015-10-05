@@ -34,10 +34,11 @@ public class CityscapeComponent extends JComponent
         Graphics2D g2 = (Graphics2D) g;
         
         Tower blah = new Tower();
+        Ground peer = new Ground();
         // invoke the draw method on each object in your Cityscape
         // ...
-        
-        
+        blah.draw(g2);
+        peer.draw(g2);
     }
     
     /**
