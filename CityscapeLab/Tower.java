@@ -42,7 +42,9 @@ public class Tower
         // windows
         Rectangle bounds4 = new Rectangle(190, 495, 70, 5);
         //ground
-        //Rectangle bounds5 = new Rectangle(0, 550, 1000, 100);
+        g2.setColor(Color.white); 
+        Rectangle bounds5 = new Rectangle(210, 500, 30, 50);
+        g2.fill(bounds5); 
         g2.setColor(Color.gray); 
         g2.fill(bounds); 
         Rectangle bounds6 = new Rectangle(200, 350, 50, 50);
@@ -51,14 +53,25 @@ public class Tower
         g2.fill(bounds6);
         g2.setColor(Color.white);
         g2.fill(bounds7);
+        g2.setColor(new Color(211,211,211));
+        g2.fill(bounds2);
+        g2.fill(bounds3);
+        g2.fill(bounds4);
+        g2.setColor(Color.white); 
+        g2.fill(bounds5); 
+        
+        
+        
         g2.setColor(Color.black);
+        
+        
         //g2.setColor(Color.gray); 
         //g2.fill(bounds); 
         g2.draw(bounds);
         g2.draw(bounds2);
         g2.draw(bounds3);
         g2.draw(bounds4);
-        //g2.draw(bounds5);
+        g2.draw(bounds5);
         g2.draw(bounds6);
         g2.draw(bounds7);
     }

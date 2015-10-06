@@ -38,11 +38,39 @@ public class Ground
         
         //ground
         Rectangle gro1 = new Rectangle(0, 550, 800, 50);
-        Rectangle gro2 = new Rectangle(0, 600, 1750, 250);
+        Rectangle gro2 = new Rectangle(0, 600, 1750, 500);
+        
+        Rectangle pil = new Rectangle(50, 600, 25, 500);
+        Rectangle pil2 = new Rectangle(250, 600, 25, 500);
+        Rectangle pil3 = new Rectangle(450, 600, 25, 500);
+        Rectangle pil4 = new Rectangle(650, 600, 25, 500);
         
         
+        g2.setColor(new Color(139,69,19));
+        g2.fill(gro1);
+        
+        
+        
+        
+        g2.setColor(new Color(0,191,255));
+        g2.fill(gro2);
+        
+        
+        g2.setColor(new Color(189,183,107));
+        g2.fill(pil);
+        g2.fill(pil2);
+        g2.fill(pil3);
+        g2.fill(pil4);
+        
+        
+        g2.setColor(Color.black);
         g2.draw(gro1);
         g2.draw(gro2);
+        g2.draw(pil);
+        g2.draw(pil2);
+        g2.draw(pil3);
+        g2.draw(pil4);
+        
     }
 
 }
