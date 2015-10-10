@@ -33,12 +33,17 @@ public class CityscapeComponent extends JComponent
     {
         Graphics2D g2 = (Graphics2D) g;
         
-        Tower blah = new Tower();
+        //Tower blah = new Tower();
+        Night blah = new Night();
         Ground peer = new Ground();
+        int x= 1000;
+        int y= 500;
+        Boat boat = new Boat(x,y);
         // invoke the draw method on each object in your Cityscape
         // ...
-        blah.draw(g2);
-        peer.draw(g2);
+        //blah.draw(g2);
+        //peer.draw(g2);
+        boat.draw(g2);
     }
     
     /**

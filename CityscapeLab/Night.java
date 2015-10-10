@@ -13,15 +13,15 @@ import java.awt.Rectangle;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Tower
+public class Night
 {
     /** description of instance variable x (add comment for each instance variable) */
     private Rectangle bounds;
 
     /**
-     * Default constructor for objects of class Tower
+     * Default constructor for objects of class Night
      */
-    public void Tower()
+    public void Night()
     {
          bounds = new Rectangle(50, 50, 50, 50);
     }
@@ -41,13 +41,13 @@ public class Tower
     {
         //night
         Rectangle sky = new Rectangle(0,0,1750,1000);
-        GradientPaint day = new GradientPaint(1500,500, Color.blue, 2056, -10,
+        GradientPaint nighty = new GradientPaint(500,-100, new Color(12,1,79), 1056, 2500,
         Color.yellow);
-        g2.setPaint(day);
+        g2.setPaint(nighty);
         g2.fill(sky);
-        Ellipse2D.Double sun = new Ellipse2D.Double(1675, -20,125,125);
+        Ellipse2D.Double sun = new Ellipse2D.Double(1675, -20,100,100);
         //g2.draw(sun);
-        g2.setPaint(Color.yellow);
+        g2.setPaint(new Color(255,255,134));
         g2.fill(sun);
         g2.draw(sun);
         // door and building
