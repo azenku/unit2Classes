@@ -18,6 +18,10 @@ public class CityscapeViewer
     public static void main(String[] args) throws InterruptedException
     {
         // create and configure the frame (window) for the program
+        
+        Graphics2D g2 = (Graphics2D) g;
+        
+        
         JFrame frame = new JFrame();
         
         frame.setSize(1750 /* x */, 1000 /* y */);
@@ -40,7 +44,7 @@ public class CityscapeViewer
         // animate the cityscape
         for( int seconds = 0; seconds < ANIMATION_TIME_IN_SECONDS; seconds++ )
         {
-            component.nextFrame();
+            component.nextFrame(Graphics g);
             Thread.sleep( 1000 );
         }
         

@@ -13,6 +13,8 @@ public class CityscapeComponent extends JComponent
 {
     // define the objects in your Cityscape as instance variables
     // ...
+    private int x;
+    private Boat boat;
     Rectangle bounds = new Rectangle(0, 0, -1, -1);
     
     
@@ -31,6 +33,7 @@ public class CityscapeComponent extends JComponent
      */
     public void paintComponent(Graphics g)
     {
+        
         Graphics2D g2 = (Graphics2D) g;
         
         //Tower blah = new Tower();
@@ -50,10 +53,18 @@ public class CityscapeComponent extends JComponent
      * Animate the cityscape by updating the objects such that they appear to be animated when they are next drawn.
      *
      */
-    public void nextFrame()
+    public void nextFrame(Graphics g)
     {
         // update the objects in the cityscape so they are animated
         // ...
+        
+         Graphics2D g2 = (Graphics2D) g;
+        x += 10;
+        boat.draw(g2);
+        
+        
+        
+        
         
         
         
