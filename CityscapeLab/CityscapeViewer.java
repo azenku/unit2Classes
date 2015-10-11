@@ -19,8 +19,6 @@ public class CityscapeViewer
     {
         // create and configure the frame (window) for the program
         
-        Graphics2D g2 = (Graphics2D) g;
-        
         
         JFrame frame = new JFrame();
         
@@ -44,7 +42,7 @@ public class CityscapeViewer
         // animate the cityscape
         for( int seconds = 0; seconds < ANIMATION_TIME_IN_SECONDS; seconds++ )
         {
-            component.nextFrame(Graphics g);
+            component.nextFrame();
             Thread.sleep( 1000 );
         }
         

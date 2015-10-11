@@ -53,15 +53,13 @@ public class CityscapeComponent extends JComponent
      * Animate the cityscape by updating the objects such that they appear to be animated when they are next drawn.
      *
      */
-    public void nextFrame(Graphics g)
+    public void nextFrame()
     {
         // update the objects in the cityscape so they are animated
         // ...
         
-         Graphics2D g2 = (Graphics2D) g;
-        x += 10;
-        boat.draw(g2);
-        
+         
+        boat.move();
         
         
         
