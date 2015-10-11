@@ -20,6 +20,10 @@ public class CityscapeComponent extends JComponent
     
     // define the CityscapeComponent contructor and intiailize all instance variables
     // ...
+    public CityscapeComponent(Boat boat)
+    {
+        this.boat = boat;
+    }
     
     
     
